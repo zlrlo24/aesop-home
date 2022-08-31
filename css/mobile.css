@@ -159,7 +159,6 @@ header h1 {
 
 /* GREETING */
 .greeting {
-    height: 500px;
     text-align: center;
     padding: 65px 0;
 }
@@ -174,7 +173,7 @@ header h1 {
 .greeting .greeting-text p {
     margin-bottom: 1em;
     line-height: 25px;
-    font-size: 14px;
+    font-size: 12px;
 }
 .greeting .greeting-text .greeting-btn {
     margin-top: 40px;
@@ -305,8 +304,8 @@ header h1 {
     margin: 0 auto;
 }
 .season-m .swiper-slide .gift-kit-img img{
-    width: 350px;
-    margin: 0 auto;
+    width: 100%;
+    padding: 0 60px;
 }
 .season-m .swiper-slide .gift-kit-img {
     display: flex;
@@ -396,7 +395,6 @@ header h1 {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    background-attachment: fixed;
 }
 .about .about-text {
     height: 450px;
@@ -429,8 +427,10 @@ footer {
     margin-bottom: 47px;
 }
 .sns-group > a > img {
-    margin-left: 10px;
-    margin-right: 10px;
+    margin-right: 20px;
+}
+.sns-group > a:last-child > img {
+    margin-right: 0;
 }
 .mb-footer {
     display: flex;
