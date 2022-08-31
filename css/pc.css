@@ -220,7 +220,6 @@ header h1 {
 /* BESTSELLER */
 .bestseller {
     height: 667px;
-
 }
 .bestseller h2 {
     font-size: 30px;
@@ -228,26 +227,14 @@ header h1 {
     padding-left: 112px;
     padding-bottom: 40px;
 }
-.bestseller .inner{
-
-}
-.bestseller .swiper {
-
-}
 .bestseller .swiper .swiper-wrapper{
     margin-left: 50px;
-    
-}
-.bestseller .swiper-slide {
     
 }
 .bestseller .swiper-slide .best-imgbox{
     width: 250px;
     height: 310px;
 
-}
-.bestseller .swiper-slide a img{
-    
 }
 .bestseller .swiper-slide .best-textbox{
     font-size: 18px;
@@ -392,192 +379,62 @@ header h1 {
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-section h2 {
-    font-size: 36px;
-    margin-bottom: 20px;
-}
-
-section p {
-    font-size: 20px;
-}
-
-main section.container {
-    width: 1440px;
-    margin: 0 auto;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-main section.container > img {
-    width: 50%;
-    flex: 1;
-}
-
-main section.container .text-box {
-    display: flex;
-    width: 100%;
-    height: 480px;
-    align-items: center;
-    justify-content: center;
-    background: var(--bg-color);
-}
-
-.detail-btn {
-    display: block;
-    margin-top: 40px;
-    width: 220px;
-    height: 48px;
-    border: 0.5px solid #ddd;
-    text-align: center;
-    color: #333;
-    line-height: 45px;
-    font-size: 16px;
-}
-
-#bestseller {
-    width: 1440px;
-    margin: 0 auto;
-    margin-top: 70px;
-    margin-bottom: 100px;
-}
-
-#bestseller h2 {
-    margin-bottom: 75px;
-}
-
-#bestseller .box-inner {
-    display: flex;
-    justify-content: space-between;
-}
-
-#bestseller .product > a > p {
-    margin-top: 35px;
-    color: var(--main-color);
-}
-
-#bestseller .product > a > img {
-    height: 283px;
-}
-
-
-#content03 {
-    flex-direction: row-reverse;
-}
-
-
-
-/* about */
-#about {
-    width: 100%;
-    height: 545px;
-    margin: 0 auto;
-    background-image: url(../images/about.jpg);
-    background-position: center;
-    background-size: cover;
-    color: #fff;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    text-align: center;
-}
-
-#about h2 {
-    font-size: 48px;
-    margin-bottom: 30px;
-}
-
-#about p {
-    font-size: 24px;
-}
-
-
 /* footer */
 footer {
     background: var(--main-color);
     width: 100%;
     height: 395px;
 }
-
 #main-footer {
     width: 1440px;
     margin: 0 auto;
     position: relative;
 }
-
 .footer-about {
     position: absolute;
     left: 60px;
     top: 40px;
     color: #fff;
 }
-
 .footer-about .about-text{
     margin-top: 57px;
     margin-bottom: 67px;
 }
-
 .footer-about .about-text > p:first-child {
     margin-bottom: 1em;
 }
-
 .footer-about .sns-group > a {
     margin-right: 10px
 }
-
 .menu-box {
     position: absolute;
     left: 400px;
     top: 50px;
     color: #fff;
 }
-
 .menu-box .footer-menu {
     margin-bottom: 63px;
 }
-
 .menu-box .footer-menu > ul {
     display: flex;
 }
-
 .menu-box .footer-menu > ul > li > a {
     color: #fff;
 }
 .menu-box .footer-menu > ul > li > a:hover {
     text-decoration: underline;
 }
-
 .menu-box .footer-menu > ul > li > span {
     margin-right: 20px;
     margin-left: 20px;
     font-size: 12px;
     color: #ccc;
 }
-
-
 #email {
     width: 375px;
     height: 43px;
     margin-right: 0;
 }
-
 #subs-btn {
     cursor: pointer;
     width: 106px;
@@ -586,17 +443,14 @@ footer {
     border: 0.5px solid #ddd;
     color: #fff;
 }
-
 .subs > p {
     margin-top: 10px;
     margin-bottom: 20px;
 }
-
 .footer-info {
     font-size: 14px;
     margin-bottom: 20px;
 }
-
 .copy {
     font-size: 12px;
 }

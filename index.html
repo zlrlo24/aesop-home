@@ -17,17 +17,16 @@
     <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700&display=swap" rel="stylesheet">    <link rel="stylesheet" href="./css/default.css"/>
     <link rel="stylesheet" href="./css/pc.css" media="screen and (min-width:768px)"/>
     <link rel="stylesheet" href="./css/mobile.css" media="screen and (max-width:767px)"/>
-    <!-- jquery -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <!-- swiper -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
     <!-- scrollMagic -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/ScrollMagic.min.js" integrity="sha512-8E3KZoPoZCD+1dgfqhPbejQBnQfBXe8FuwL4z/c8sTrgeDMFEnoyTlH3obB4/fV+6Sg0a0XF+L/6xS4Xx1fUEg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-
+    <!-- gsap -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.0/gsap.min.js" integrity="sha512-GQ5/eIhs41UXpG6fGo4xQBpwSEj9RrBvMuKyE2h/2vw3a9x85T1Bt0JglOUVJJLeyIUl/S/kCdDXlE/n7zCjIg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- lodash -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.21/lodash.min.js" integrity="sha512-WFN04846sdKMIP5LKNphMaWzU7YpMyCU245etK3g/2ARYbPK9Ub18eG+ljU96qKRCWh+quCY7yefSmlkQw1ANQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script defer src="./js/main.js"></script>
-    
-    
 </head>
 <body>
     <header>
@@ -44,9 +43,9 @@
                 </ul>
             </nav>
             <div class="right-menu pc-only">
-                <a href="javascript:void(0)"><img src="./images/search.svg" alt=""></a>
-                <a href="javascript:void(0)"><img src="./images/shopping.svg" alt=""></a>
-                <a href="javascript:void(0)"><img src="./images/user.svg" alt=""></a>
+                <a href="javascript:void(0)"><img src="./images/search.svg" alt="검색"></a>
+                <a href="javascript:void(0)"><img src="./images/shopping.svg" alt="장바구니"></a>
+                <a href="javascript:void(0)"><img src="./images/user.svg" alt="사용자"></a>
             </div>
             <a href="javascript:void(0)" id="gnb-toggle-btn" class="mobile-only">
                 <img src="./images/toggle-btn.svg" alt="main menu">
@@ -55,7 +54,7 @@
         </div>
     </header>
 
-    <div class="main-visual">
+    <div class="main-visual pc-only">
         <div class="swiper">
             <div class="swiper-wrapper">
                 <div class="swiper-slide s1">
@@ -92,6 +91,47 @@
             </div>
         </div>
         <div class="pagination">
+            <div class="swiper-pagination"></div>
+        </div>
+    </div>
+
+    <!-- main-visual mobile -->
+    <div class="main-visual-m mobile-only">
+        <div class="swiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide s1">
+                    <img src="./images/main-visual1.jpg" alt="기프트 키트 컬렉션">
+                    <div class="left-title">
+                        <h2>
+                            그리운 이들에게 전하는 인사 <br>
+                            <strong>기프트 키트 컬렉션</strong>
+                        </h2>
+                        <div class="btn"><a href="javascript:void(0)">더 보기</a></div>
+                    </div>
+                </div>
+                <div class="swiper-slide s2">
+                    <img src="./images/main-visual2.jpg" alt="Hwyl">
+                    <div class="right-title">
+                        <h2>
+                            <strong>Hwyl</strong> <br>
+                            복잡하면서 편안한 <br>
+                            짙은 그린과 흙내음의 조화
+                        </h2>
+                        <div class="btn"><a href="javascript:void(0)">더 보기</a></div>
+                    </div>
+                </div>
+                <div class="swiper-slide s3">
+                    <img src="./images/main-visual3.jpg" alt="스스로에게 건네는 선물">
+                    <div class="right-title">
+                        <h2>
+                            일상의 부담에서 <br>
+                            여유를 찾고 싶을 때 <br>
+                            <strong>스스로에게 건네는 선물</strong>
+                        </h2>
+                        <div class="btn"><a href="javascript:void(0)">더 보기</a></div>
+                    </div>
+                </div>
+            </div>
             <div class="swiper-pagination"></div>
         </div>
     </div>
@@ -134,7 +174,7 @@
         </div>
     </section>
 
-    <section class="bestseller scroll-spy">
+    <section class="bestseller scroll-spy pc-only">
         <div class="inner">
             <h2 class="back-to-position to-top">누구나 좋아하는 이솝의 베스트셀러</h2>
             <div class="swiper">
@@ -220,8 +260,110 @@
             </div>
         </div>
     </section>
+
+    <section class="bestseller-m mobile-only scroll-spy">
+        <div class="inner">
+            <h2 class="back-to-position to-top">누구나 좋아하는 이솝의 베스트셀러</h2>
+            <div class="swiper">
+                <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide prod">
+                        <div class="best-imgbox">
+                            <a href="javascript:void(0)"><img src="./images/best01.png" alt="제라늄 리프 바디 클렌저"></a>
+                        </div>
+                        <div class="best-textbox">
+                            <a href="javascript:void(0)">
+                                제라늄 리프 바디 클렌저 <br>
+                                500ml / 50,000원
+                            </a>
+                        </div>
+                    </div>
+                    <div class="swiper-slide prod">
+                        <div class="best-imgbox">
+                            <a href="javascript:void(0)"><img src="./images/best02.png" alt="파슬리 씨드 안티 옥시던트 인텐스 세럼"></a>
+                        </div>
+                        <div class="best-textbox">
+                            <a href="javascript:void(0)">
+                                파슬리 씨드 안티 옥시던트 인텐스 세럼 <br>
+                                60ml / 105,000원
+                            </a>
+                        </div>
+                    </div>
+                    <div class="swiper-slide prod">
+                        <div class="best-imgbox">
+                            <a href="javascript:void(0)"><img src="./images/best03.png" alt="파슬리 씨드 안티 옥시던트 페이셜 토너"></a>
+                        </div>
+                        <div class="best-textbox">
+                            <a href="javascript:void(0)">
+                                파슬리 씨드 안티 옥시던트 페이셜 토너 <br>
+                                100ml / 47,000원
+                            </a>
+                        </div>
+                    </div>
+                    <div class="swiper-slide perp">
+                        <div class="best-imgbox">
+                            <a href="javascript:void(0)"><img src="./images/best04.png" alt="휠 오 드 퍼퓸"></a>
+                        </div>
+                        <div class="best-textbox">
+                            <a href="javascript:void(0)">
+                                휠 오 드 퍼퓸 <br>
+                                50ml / 145,000원
+                            </a>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="best-imgbox">
+                            <a href="javascript:void(0)"><img src="./images/best05.png" alt="레저렉션 아로마틱 핸드 워시"></a>
+                        </div>
+                        <div class="best-textbox">
+                            <a href="javascript:void(0)">
+                                레저렉션 아로마틱 핸드 워시 <br>
+                                500ml / 50,000원
+                            </a>
+                        </div>
+                    </div>
+                    <div class="swiper-slide prod">
+                        <div class="best-imgbox">
+                            <a href="javascript:void(0)"><img src="./images/best06.png" alt="레저렉션 아로마틱 핸드 밤"></a>
+                        </div>
+                        <div class="best-textbox">
+                            <a href="javascript:void(0)">
+                                레저렉션 아로마틱 핸드 밤 <br>
+                                75ml / 31,000원
+                            </a>
+                        </div>
+                    </div>
+                    <div class="swiper-slide perp">
+                        <div class="best-imgbox">
+                            <a href="javascript:void(0)"><img src="./images/best07.png" alt="테싯 오 드 퍼퓸"></a>
+                        </div>
+                        <div class="best-textbox">
+                            <a href="javascript:void(0)">
+                                테싯 오 드 퍼퓸<br>
+                                50ml / 140,000원
+                            </a>
+                        </div>
+                    </div>
+                    <div class="swiper-slide prod">
+                        <div class="best-imgbox">
+                            <a href="javascript:void(0)"><img src="./images/best08.png" alt="라인드 컨센트레이트 바디 밤"></a>
+                        </div>
+                        <div class="best-textbox">
+                            <a href="javascript:void(0)">
+                                라인드 컨센트레이트 바디 밤<br>
+                                100ml / 36,000원
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            </div>
+        </div>
+    </section>
     
-    <section class="season scroll-spy">
+    <hr>
+    <section class="season scroll-spy pc-only">
         <div class="inner">
             <h2 class="back-to-position to-top">시즈널 기프트 키트</h2>
             <div class="gift-kit">
@@ -253,6 +395,49 @@
         </div>
     </section>
     
+    <section class="season-m mobile-only scroll-spy">
+        <div class="inner">
+            <h2 class="back-to-position to-top">시즈널 기프트 키트</h2>
+            <div class="swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="gift-kit-img">
+                            <a href="javascript:void(0)"><img src="./images/gift-kit01.png" alt="더 포레저"></a>
+                        </div>
+                        <div class="gift-text">
+                            <h3><a href="javascript:void(0)"> 더 포레저</a></h3>
+                            <p>상쾌한 클렌징과 영양을 전하는 시트러스를 함유한 바디 듀오</p>
+                            <p>50,000원</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="gift-kit-img">
+                            <a href="javascript:void(0)"><img src="./images/gift-kit02.png" alt="더 리스너"></a>
+                        </div>
+                        <div class="gift-text">
+                            <h3><a href="javascript:void(0)"> 더 리스너</a></h3>
+                            <p>제라늄 리프 바디 케어 제품 3종</p>
+                            <p>90,000원</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="gift-kit-img">
+                            <a href="javascript:void(0)"><img src="./images/gift-kit03.png" alt="더 멘토"></a>
+                        </div>
+                        <div class="gift-text">
+                            <h3><a href="javascript:void(0)">더 멘토</a></h3>
+                            <p>항산화 성분이 풍부한 파슬리 씨드 스킨 케어 3종</p>
+                            <p>213,000원</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            </div>
+        </div>
+    </section>
+
+
     <section class="benefit scroll-spy">
         <div class="inner">
             <h2 class="back-to-position to-top">공식 온라인몰 혜택</h2>
@@ -283,7 +468,7 @@
                     </div>
                 </div>
                 <div class="benefit-box">
-                    <img src="./images/benefit01.png" alt="보자기 선물 포장 서비스">
+                    <img src="./images/benefit03.png" alt="보자기 선물 포장 서비스">
                     <div class="benefit-text">
                         <h3>보자기 선물 포장 서비스</h3>
                         <p>
@@ -301,11 +486,11 @@
         </div>
     </section>
 
-    <section class="about">
+    <section class="about scroll-spy">
         <div class="inner">
             <div class="about-text">
-                <h2>이솝의 지속가능성</h2>
-                <p>
+                <h2 class="back-to-position to-top">이솝의 지속가능성</h2>
+                <p class="back-to-position to-top delay">
                     확고한 기업 윤리를 기반으로 설립된 이솝의 목표는 <br>
                     품질, 우수성, 완전성을 변함없이 추구하는 한편, <br>
                     언제나 환경영향을 최소화하기 위해 노력하는 것입니다.
@@ -358,7 +543,7 @@
                 </div>
             </div>
         </div>
-        <div id="mb-footer" class="mobile-only">
+        <div class="mb-footer mobile-only">
             <div class="sns-group">
                 <a href="#"><img src="./images/instagram.svg" alt="instagram"></a>
                 <a href="#"><img src="./images/twitter.svg" alt="twitter"></a>
@@ -379,53 +564,8 @@
         </div>
     </footer>
 
-
-
-
-    <!-- <main>
-
-        <section id="content" class="mobile-only">
-        <h2>누구나 좋아하는 <br> 이솝의 베스트셀러</h2>
-        <div class="gallery">
-            <img class="on" src="./images/best01.png" alt="1">
-            <img src="./images/best2.jpg" alt="2">
-            <img src="./images/best3.jpg" alt="3">
-            <img src="./images/best4.jpg" alt="4">
-        </div>
-        <div class="btn-group">
-            <button class="prev">&lt;</button>
-            <button class="next">&gt;</button>
-        </div>
-    </section>
-        
-
-
-        
-        <section id="content03" class="container">
-            <img src="./images/content02.jpg" alt="02">
-            <div class="text-box">
-                <div class="text-box-inner">
-                    <h2>시트러스 멜란지</h2>
-                    <p>기분 전환을 돕는 이솝의 네 번째 바디 클렌저<br>
-                        시트러스 멜란지 출시</p>
-                    <a href="#" class="detail-btn">바디 클렌저 보기</a>
-                </div>
-            </div>
-        </section>
-
-    </main>
-
-    <section id="about">
-        <h2>이솝의 지속가능성</h2>
-        <p>
-            확고한 기업 윤리를 기반으로 설립된 이솝의 목표는 <br>
-            품질, 우수성, 완전성을 변함없이 추구하는 한편, <br>
-            언제나 환경영향을 최소화하기 위해 노력하는 것입니다.
-        </p>
-    </section> -->
-
-    
-
-    <script src="./js/swiper.js"></script>
+    <div id="to-top">
+        <img src="./images/top-btn.png" alt="올라가기">
+    </div>
 </body>
 </html>
