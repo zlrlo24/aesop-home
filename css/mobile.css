@@ -120,6 +120,7 @@ header h1 {
 }
 .main-visual-m .swiper .swiper-slide .left-title h2,
 .main-visual-m .swiper .swiper-slide .right-title h2 {
+    width: 100%;
     font-size: 20px;
     color: #fff;
     line-height: 35px;
@@ -433,13 +434,13 @@ footer {
 .sns-group > a:last-child > img {
     margin-right: 0;
 }
-.mb-footer {
+#mb-footer {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
-.mb-footer > img {
+#mb-footer > img {
     width: 120px;
     height: 45px;
     margin-bottom: 20px;

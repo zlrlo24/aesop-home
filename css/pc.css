@@ -168,6 +168,7 @@ header h1 {
 .greeting .greeting-text h2{
     font-weight: bold;
     font-size: 36px;
+    margin-bottom: 30px;
 }
 .greeting .greeting-text p {
     margin-bottom: 1em;
