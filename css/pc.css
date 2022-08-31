@@ -454,3 +454,13 @@ footer {
 .copy {
     font-size: 12px;
 }
+
+/* TO-TOP */
+#to-top {
+    width: 45px;
+    position: fixed;
+    right: 40px;
+    bottom: 40px;
+    z-index: 99;
+    cursor: pointer;
+}

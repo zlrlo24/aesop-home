@@ -5,16 +5,20 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Aesop</title>
-    <meta name="description" content="이솝은 세심하게 고안된 효과적이면서도, 감각적인 즐거움을 선사하는 스킨, 헤어, 바디 케어 제품을 제공합니다.">
+    <!--Open Graph-->
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Aesop" />
+    <meta property="og:title" content="Aesop" />
+    <meta property="og:description" content="이솝은 세심하게 고안된 효과적이면서도, 감각적인 즐거움을 선사하는 스킨, 헤어, 바디 케어 제품을 제공합니다." />
+    <meta property="og:image" content="./images/aesop_seo.png" />
+    <meta property="og:url" content="https://www.aesop.com/kr/" />
     <meta name="keywards" content="이솝, aesop, Aesop, 스킨, 로션, 룸스프레이, 핸드크림, 아로마틱">
-    <meta name="author" content="Aesop">
-    <meta property="og:image" content="./image/main-visual1.jpg">
-    <meta property="og:title" content="Aesop">
-    <meta property="og:description" content="이솝은 세심하게 고안된 효과적이면서도, 감각적인 즐거움을 선사하는 스킨, 헤어, 바디 케어 제품을 제공합니다.">
     <!-- favicon -->
     <link rel="shortcut icon" href="./images/hnet.com-image.ico">
     <!-- font -->
     <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700&display=swap" rel="stylesheet">    <link rel="stylesheet" href="./css/default.css"/>
+    <!-- style.css -->
+    <link rel="stylesheet" href="./css/default.css">
     <link rel="stylesheet" href="./css/pc.css" media="screen and (min-width:768px)"/>
     <link rel="stylesheet" href="./css/mobile.css" media="screen and (max-width:767px)"/>
     <!-- swiper -->
@@ -26,6 +30,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.0/gsap.min.js" integrity="sha512-GQ5/eIhs41UXpG6fGo4xQBpwSEj9RrBvMuKyE2h/2vw3a9x85T1Bt0JglOUVJJLeyIUl/S/kCdDXlE/n7zCjIg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <!-- lodash -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.21/lodash.min.js" integrity="sha512-WFN04846sdKMIP5LKNphMaWzU7YpMyCU245etK3g/2ARYbPK9Ub18eG+ljU96qKRCWh+quCY7yefSmlkQw1ANQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- main.js -->
     <script defer src="./js/main.js"></script>
 </head>
 <body>
@@ -138,7 +143,7 @@
 
     <section class="greeting">
         <div class="inner">
-            <div class="greeting-text">
+            <div class="greeting-text pc-only">
                 <h2>FAMILY GATHERING with AESOP</h2>
                 <p>인내의 시간을 어루만지며 두드림 끝에 맞이한 결실.</p>
                 <p>
@@ -151,6 +156,23 @@
                 </p>
                 <p>
                     추석은 사랑하는 이들과 함께 한 해의 결실을 나누는 소중한 시간입니다. <br>
+                    감사의 계절을 기리며 준비한 이솝 기프트 셀렉션을 만나보세요.
+                </p>
+                <div class="greeting-btn"><a href="javascript:void(0)">VIEW MORE</a></div>
+            </div>
+            <div class="greeting-text mobile-only">
+                <h2>FAMILY GATHERING with AESOP</h2>
+                <p>인내의 시간을 어루만지며 두드림 끝에 맞이한 결실.</p>
+                <p>
+                    마침내 돌아온 한가위, <br> 이솝은 결실의 단단함을 이야기합니다. <br>
+                    무덥고 고된 나날을 견디는 동안 가을이 고요히 무르익었습니다.
+                </p>
+                <p>
+                    세계적으로 오랜 시간 겪어온 <br>어려움을 회복하는 상황에서,
+                    거침 속에서 탄생하는 <br>아름다운 작품을 통해 그 시간을 뒤돌아보며 모두의 노력에 경의를 표하고 함께 거둔 결실을 떠올려봅니다.
+                </p>
+                <p>
+                    추석은 사랑하는 이들과 함께  <br>한 해의 결실을 나누는 소중한 시간입니다. <br>
                     감사의 계절을 기리며 준비한 이솝 기프트 셀렉션을 만나보세요.
                 </p>
                 <div class="greeting-btn"><a href="javascript:void(0)">VIEW MORE</a></div>
@@ -510,18 +532,17 @@
                 <div class="sns-group">
                     <a href="javascript:void(0)"><img src="./images/instagram.svg" alt="instagram"></a>
                     <a href="javascript:void(0)"><img src="./images/twitter.svg" alt="twitter"></a>
-                    <a href="javascript:void(0)"><img src="./images/linkedin.svg" alt="linkedin"></a>
                     <a href="javascript:void(0)"><img src="./images/kakao.svg" alt="kakao"></a>
                 </div>
             </div>
             <div class="menu-box">
                 <div class="footer-menu">
                     <ul>
-                        <li><a href="#">채용</a><span>|</span></li>
-                        <li><a href="#"><strong>이솝 코리아 개인정보 처리방침</strong></a><span>|</span></li>
-                        <li><a href="#">이솝 재단</a><span>|</span></li>
-                        <li><a href="#">이용 약관</a><span>|</span></li>
-                        <li><a href="#">문의하기</a></li>
+                        <li><a href="javascript:void(0)">채용</a><span>|</span></li>
+                        <li><a href="javascript:void(0)"><strong>이솝 코리아 개인정보 처리방침</strong></a><span>|</span></li>
+                        <li><a href="javascript:void(0)">이솝 재단</a><span>|</span></li>
+                        <li><a href="javascript:void(0)">이용 약관</a><span>|</span></li>
+                        <li><a href="javascript:void(0)">문의하기</a></li>
                     </ul>
                 </div>
                 <div class="subs">
@@ -545,10 +566,9 @@
         </div>
         <div class="mb-footer mobile-only">
             <div class="sns-group">
-                <a href="#"><img src="./images/instagram.svg" alt="instagram"></a>
-                <a href="#"><img src="./images/twitter.svg" alt="twitter"></a>
-                <a href="#"><img src="./images/linkedin.svg" alt="linkedin"></a>
-                <a href="#"><img src="./images/kakao.svg" alt="kakao"></a>
+                <a href="javascript:void(0)"><img src="./images/instagram.svg" alt="instagram"></a>
+                <a href="javascript:void(0)"><img src="./images/twitter.svg" alt="twitter"></a>
+                <a href="javascript:void(0)"><img src="./images/kakao.svg" alt="kakao"></a>
             </div>
             <img src="./images/logo.svg" alt="logo">
             <div class="mb-footer-text">

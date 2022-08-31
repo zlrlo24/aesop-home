@@ -31,12 +31,13 @@ body {
 .back-to-position {
     opacity: 0;
     transition-duration: 1s;
+    overflow: hidden;
 }
 .back-to-position.to-right {
-    transform: translateX(-500px);
+    transform: translateX(-100px);
 }
 .back-to-position.to-left {
-    transform: translateX(500px);
+    transform: translateX(100px);
 }
 .back-to-position.to-top {
     transform: translateY(200px);
@@ -113,13 +114,13 @@ header h1 {
 }
 .main-visual-m .swiper .swiper-slide img {
     width: 100%;
-    height: 600px;
+    height: 550px;
     object-fit: cover;
     object-position: center;
 }
 .main-visual-m .swiper .swiper-slide .left-title h2,
 .main-visual-m .swiper .swiper-slide .right-title h2 {
-    font-size: 24px;
+    font-size: 20px;
     color: #fff;
     line-height: 35px;
     font-weight: normal;
@@ -173,7 +174,7 @@ header h1 {
 .greeting .greeting-text p {
     margin-bottom: 1em;
     line-height: 25px;
-    font-size: 12px;
+    font-size: 14px;
 }
 .greeting .greeting-text .greeting-btn {
     margin-top: 40px;
