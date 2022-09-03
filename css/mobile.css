@@ -424,27 +424,30 @@ footer {
     width: 100%;
     height: 410px;
 }
-.sns-group {
-    margin-top: 50px;
-    margin-bottom: 47px;
-}
-.sns-group > a > img {
-    margin-right: 20px;
-}
-.sns-group > a:last-child > img {
-    margin-right: 0;
-}
+
 #mb-footer {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
+
+.sns-group {
+    margin-top: 50px;
+    margin-bottom: 47px;
+}
+
+.sns-group > a > img {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
 #mb-footer > img {
     width: 120px;
     height: 45px;
     margin-bottom: 20px;
 }
+
 .mb-footer-text {
     color: #fff;
     text-align: center;
@@ -452,6 +455,7 @@ footer {
     line-height: 25px;
     margin-bottom: 35px;
 }
+
 .mb-copy {
     color: #fff;
     font-size: 12px;
